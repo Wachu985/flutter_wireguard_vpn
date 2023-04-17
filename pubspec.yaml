@@ -1,7 +1,7 @@
 name: wireguard_vpn
 description: A new Flutter plugin project.
 version: 0.0.1
-homepage:
+homepage: https://github.com/Wachu985/flutter_wireguard_vpn
 
 environment:
   sdk: '>=2.19.5 <3.0.0'
