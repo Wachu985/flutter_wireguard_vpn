@@ -8,7 +8,7 @@ To use this plugin, you must first add it to your pubspec.yaml file:
 
 ``` yaml
 dependencies:
-  wireguard_vpn: ^1.0.0 
+  wireguard_vpn: ^0.0.1+2 
 ```
 
 Then, import the package in your .dart file:
@@ -25,7 +25,7 @@ bool vpnActivate = false;
 String initName = "MyWireguardVPN";
 String initAddress = "192.168.1.1/24";
 String initDnsServer = "8.8.8.8";
-int initPort = 51820;
+String initPort = "51820";
 String initAllowedIp = "0.0.0.0/0";
 String initEndpoint = "vpn.example.com:51820";
 String initPublicKey = "PUBLIC_KEY";
