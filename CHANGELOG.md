@@ -1,3 +1,7 @@
+## 0.0.1+1
+
+* Updated README.md
+* Updated LICENSE
 ## 0.0.1
 
 * Added three new methods to allow management of VPN connection state:

@@ -167,12 +167,12 @@ class _MyAppState extends State<MyApp> {
   }
 }
 ```
-For more information, you can check the [example tab](https://pub.dev/packages/wireguard_vpn/example) or the [GitHub repository]().
+For more information, you can check the [example tab](https://pub.dev/packages/wireguard_vpn/example) or the [GitHub repository](https://github.com/Wachu985/flutter_wireguard_vpn).
 
 ## Contributions
 
-Contributions are welcome. If you find a bug or want to add a new feature, please open a new [issue]() or send a [pull request]().
+Contributions are welcome. If you find a bug or want to add a new feature, please open a new [issue](https://github.com/Wachu985/flutter_wireguard_vpn/issues) or send a [pull request](https://github.com/Wachu985/flutter_wireguard_vpn/pulls).
 
 ## License
 
-This package is available under the terms of the [BSD 3-clause license](https://opensource.org/license/bsd-3-clause/). Please refer to the [LICENSE]() file for more information.
+This package is available under the terms of the [BSD 3-clause license](https://opensource.org/license/bsd-3-clause/). Please refer to the [LICENSE](https://pub.dev/packages/wireguard_vpn/license) file for more information.
