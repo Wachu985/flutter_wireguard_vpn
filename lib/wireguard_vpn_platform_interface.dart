@@ -24,16 +24,17 @@ abstract class WireguardVpnPlatform extends PlatformInterface {
     _instance = instance;
   }
 
+  /// Declaration of the method [changeStateParams] that receives an object of [SetStateParams].
   Future<bool?> changeStateParams(SetStateParams params) {
     throw UnimplementedError('changeStateParams() has not been implemented.');
   }
 
-  //
+  /// Declaration of the method [runningTunnelNames] this is responsible for obtaining the active tunnels.
   Future<String?> runningTunnelNames() {
     throw UnimplementedError('runningTunnelNames() has not been implemented.');
   }
 
-  //
+  /// Declaration of the method [tunnelGetStats] this is responsible for obtaining the stats of the tunnels.
   Future<Stats?> tunnelGetStats(String name) {
     throw UnimplementedError('runningTunnelNames() has not been implemented.');
   }

@@ -2,6 +2,15 @@
 
 A Flutter plugin that enables the activation and deactivation of VPN connections using [WireGuard](https://www.wireguard.com/).
 
+## Setup
+Modify the file /android/app/build.gradle and set the minSdkVersion to 21:
+``` gradle
+android {                    
+   defaultConfig {
+      minSdkVersion 21
+  }                                
+}
+```
 ## Usage
 
 To use this plugin, you must first add it to your pubspec.yaml file:

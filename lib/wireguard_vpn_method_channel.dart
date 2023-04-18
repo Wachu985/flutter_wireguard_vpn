@@ -12,6 +12,7 @@ class MethodChannelWireguardVpn extends WireguardVpnPlatform {
   /// The method channel used to interact with the native platform.
   final methodChannel = const MethodChannel('wachu985/wireguard-flutter');
 
+  /// Implementation of the method [changeStateParams] using the PlatformChannel.
   @override
   Future<bool?> changeStateParams(SetStateParams params) async {
     try {
@@ -24,6 +25,7 @@ class MethodChannelWireguardVpn extends WireguardVpnPlatform {
     }
   }
 
+  /// Implementation of the method [runningTunnelNames] using the PlatformChannel.
   @override
   Future<String?> runningTunnelNames() async {
     try {
@@ -34,6 +36,7 @@ class MethodChannelWireguardVpn extends WireguardVpnPlatform {
     }
   }
 
+  /// Implementation of the method [tunnelGetStats] using the PlatformChannel.
   @override
   Future<Stats?> tunnelGetStats(String name) async {
     try {

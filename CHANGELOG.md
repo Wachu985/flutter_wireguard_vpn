@@ -1,3 +1,7 @@
+## 0.0.1+3 - Update minSdkVersion
+
+* Updated README.md
+* The public API has Dartdoc comments added.
 ## 0.0.1+2 - Updated Readme
 
 * Updated README.md
