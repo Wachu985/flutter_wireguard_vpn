@@ -32,6 +32,17 @@ android {
         targetCompatibility JavaVersion.VERSION_1_8
         coreLibraryDesugaringEnabled = true
     }
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles "proguard-android-optimize.txt"
+            packagingOptions {
+                exclude "DebugProbesKt.bin"
+                exclude "kotlin-tooling-metadata.json"
+            }
+        }
+    }
 
     kotlinOptions {
         jvmTarget = '1.8'
