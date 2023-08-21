@@ -28,7 +28,7 @@ To use this plugin, you must first add it to your pubspec.yaml file:
 
 ``` yaml
 dependencies:
-  wireguard_vpn: ^0.0.1+4 
+  wireguard_vpn: ^0.0.2 
 ```
 
 Then, import the package in your .dart file:
