@@ -34,8 +34,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled true
-            proguardFiles "proguard-android-optimize.txt"
+            proguardFiles("proguard-android-optimize.txt")
             packagingOptions {
                 exclude "DebugProbesKt.bin"
                 exclude "kotlin-tooling-metadata.json"
