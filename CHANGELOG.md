@@ -1,4 +1,4 @@
-## 0.0.1+4 - Fixed the execution error in release mode.
+## 0.0.2 - Fixed the execution error in release mode.
 
 * Updated README.md
 * Update proguard rules.
