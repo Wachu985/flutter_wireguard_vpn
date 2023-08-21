@@ -3,7 +3,7 @@
 A Flutter plugin that enables the activation and deactivation of VPN connections using [WireGuard](https://www.wireguard.com/).
 
 ## Setup
-Modify the file /android/app/build.gradle and set the minSdkVersion to 21:
+- Modify the file /android/app/build.gradle and set the minSdkVersion to 21:
 ``` gradle
 android {                    
    defaultConfig {
@@ -11,13 +11,24 @@ android {
   }                                
 }
 ```
+- To run the application in release mode, you must add a file named ```proguard-rules.pro``` with the following content to the ```./android/app/``` directory:
+```
+-keep class app.wachu.wireguard_vpn.** {*;}
+-keep class com.beust.klaxon.** {*;}
+```
+- Another option is to add the following to the ```./android/app/build.gradle``` file under the ```buildtypes release```:
+```
+shrinkResources false
+minifyEnabled false
+```
+### I'd like to thank the user [ByteSizedMarius](https://github.com/ByteSizedMarius) for their contribution regarding the execution in release mode of the package. Thank you.
 ## Usage
 
 To use this plugin, you must first add it to your pubspec.yaml file:
 
 ``` yaml
 dependencies:
-  wireguard_vpn: ^0.0.1+2 
+  wireguard_vpn: ^0.0.1+4 
 ```
 
 Then, import the package in your .dart file:
@@ -177,6 +188,9 @@ class _MyAppState extends State<MyApp> {
 }
 ```
 For more information, you can check the [example tab](https://pub.dev/packages/wireguard_vpn/example) or the [GitHub repository](https://github.com/Wachu985/flutter_wireguard_vpn).
+
+## Generate WireGuard VPN configurations
+**To obtain WireGuard VPN configurations for testing, you can visit the [PotonVPN](https://account.protonvpn.com/login) website, register, and generate a configuration under the downloads section. You can also follow the guide on the official [WireGuard VPN](https://www.wireguard.com/) website.**
 
 ## Contributions
 

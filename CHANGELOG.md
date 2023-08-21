@@ -1,3 +1,7 @@
+## 0.0.1+4 - Fixed the execution error in release mode.
+
+* Updated README.md
+* Update proguard rules.
 ## 0.0.1+3 - Update minSdkVersion
 
 * Updated README.md

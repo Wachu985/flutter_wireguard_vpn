@@ -1,0 +1,2 @@
+-keep class app.wachu.wireguard_vpn.** {*;}
+-keep class com.beust.klaxon.** {*;}
